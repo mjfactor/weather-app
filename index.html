@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="styles.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>Check Weather</title>
+</head>
+<body>
+<div class="card">
+    <div class="search-container">
+        <input type="text" placeholder="Country or City" spellcheck="false">
+        <button><img src="images/search.png" alt=""></button>
+    </div>
+    <div class="error">
+        <p>City or Country not found</p>
+    </div>
+    <div class="weather">
+        <img src="images/rain.png" class ="weather-icon" alt="">
+        <h1 class = "temp">22°C</h1>
+        <h2 class="city">Philippines</h2>
+        <div class="details">
+            <div class="col1">
+                <img src="images/humidity.png" alt="">
+                <div>
+                    <span class="humidity">20%</span>
+                    <p>Humidity</p>
+                </div>
+            </div>
+            <div class="col2">
+                <img src="images/wind.png" alt="">
+                <div>
+                    <span class = "wind">15km/h</span>
+                    <p>Wind</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
