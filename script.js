@@ -6,7 +6,7 @@ const weatherIcon = document.querySelector(".weather-icon");
 
 async function getWeather(city) {
     const response = await fetch(apiURL + city + "&appid=" + apiKey);
-    if (response.status === 404 || response.status === 400) {
+    if (response.status === 404 || response.status === 404) {
         document.querySelector(".weather").style.display = "none";
         document.querySelector(".error").style.display = "block";
     } else {
@@ -42,5 +42,7 @@ searchInput.addEventListener("keyup", function (event) {
         searchButton.click();
     }
 })
+
+
 
 

@@ -18,31 +18,46 @@ body {
 }
 .search-container{
     display: flex;
-    padding-left: 20px;    justify-content: space-between;
+    max-width: 400px;
     align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    background: #2f3640;
+    border-radius: 50px;
+    position: relative;
 }
-.search-container input{
-    border: 0;
-    outline: 0;
-    border-radius: 40px;
-    padding: 0 20px;
-    height: 50px;
-    width: 320px;
-    font-weight: bolder;
-    text-align: center;
-    font-family: "Times New Roman", serif;
-}
-.search-container button{
-    border: 0;
-    outline: 0;
-    border-radius: 150%;
+.searchButton {
+    color: white;
+    position: absolute;
+    right: 8px;
     width: 50px;
     height: 50px;
+    border-radius: 50%;
+    background: var(--gradient-2, linear-gradient(90deg, #2AF598 0%, #009EFD 100%));
+    border: 0;
+    display: inline-block;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
 }
-.search-container button img{
-    width: 30px;
-    height: 30px;
-    cursor: pointer;
+/*hover effect*/
+button:hover {
+    color: #fff;
+    background-color: #1A1A1A;
+    box-shadow: rgba(0, 0, 0, 0.5) 0 10px 20px;
+    transform: translateY(-3px);
+}
+/*button pressing effect*/
+button:active {
+    box-shadow: none;
+    transform: translateY(0);
+}
+
+.searchInput {
+    border: none;
+    background: none;
+    outline: none;
+    color: white;
+    font-size: 15px;
+    padding: 24px 46px 24px 26px;
 }
 
 .weather-icon{
@@ -88,7 +103,7 @@ body {
 .error{
     /*border: 1px solid red;*/
     text-align: left;
-    margin-left: 28px;
+    margin-left: 12px;
     margin-top: 10px;
     font-size: 15px;
     display: none;
